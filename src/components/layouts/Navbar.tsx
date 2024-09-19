@@ -3,7 +3,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className=" p-5 fixed bg-transparent backdrop-blur-sm w-full">
+    <div className=" p-5 fixed bg-transparent backdrop-blur-sm w-full z-50">
       <div className="flex items-center justify-between">
         <span className="text-4xl font-bold text-white">M.H</span>
         <div className="flex items-center gap-2">
