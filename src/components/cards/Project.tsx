@@ -9,7 +9,7 @@ export default function Project({
   description: string;
 }) {
   return (
-    <div className="w-[21rem] h-96 rounded-2xl border border-[#ffffff33] p-4 bg-[#050817]">
+    <div className="w-full md:w-[21rem] h-96 rounded-2xl border border-[#ffffff33] p-4 bg-[#050817]">
         <div className="rounded-md overflow-hidden relative w-full h-44 mb-5">
           <Image src={imageUrl} alt="project" fill />
         </div>

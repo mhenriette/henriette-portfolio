@@ -22,8 +22,8 @@ const socials = [
 
 export default function Contact() {
   return (
-    <div className="max-w-6xl my-8 md:my-12 mx-auto w-full items-start flex justify-center gap-32">
-      <div className="flex-1">
+    <div className="max-w-6xl py-8 md:py-12 mx-auto w-full items-start flex flex-col md:flex-row justify-center gap-32 px-3">
+      <div className="md:flex-1">
         <h1 className="font-semibold text-2xl md:text-3xl leading-10 mb-5">
           Let&apos;s get in <span className="text-secondary"> touch</span>
         </h1>
@@ -35,10 +35,9 @@ export default function Contact() {
           {socials.map((social) => (
             <Social key={social.id}>{social.children}</Social>
           ))}
-          
         </div>
       </div>
-      <div className="flex-1">
+      <div className="md:flex-1 w-full">
         <form className="items-center flex flex-col">
           <div className="grid md:grid-cols-2 md:gap-6 w-full">
             <Input type="text" label="First name" id="floating_first_name" />

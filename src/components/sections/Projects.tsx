@@ -5,8 +5,8 @@ import AnimatedButton from "../cards/AnimatedButton";
 
 export default function Projects() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-3 md:h-screen flex flex-col justify-center items-center">
-      <h2 className="text-center font-bold text-2xl md:text-3xl">
+    <div className="w-full max-w-6xl mx-auto px-3 py-8 md:py-12 flex flex-col justify-center- items-center=">
+      <h2 className="font-bold text-2xl md:text-3xl text-start">
         A small Selection of the Recent
         <span className="text-secondary"> Projects</span>
       </h2>
@@ -20,7 +20,7 @@ export default function Projects() {
           />
         ))}
       </div>
-     <AnimatedButton>Show more</AnimatedButton>
+      <AnimatedButton>Show more</AnimatedButton>
     </div>
   );
 }
