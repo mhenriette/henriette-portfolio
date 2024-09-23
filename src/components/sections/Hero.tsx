@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import React from 'react'
-import mune from "../../../public/munezero.jpeg"
-import { Button } from '../ui/button';
-import Line from '../ui/Line';
+import Image from "next/image";
+import React from "react";
+import mune from "../../../public/munezero.jpeg";
+import { Button } from "../ui/button";
+import Line from "../ui/Line";
 import { GithubIcon, Instagram, Linkedin } from "lucide-react";
-
 
 function Hero() {
   return (
@@ -43,4 +42,4 @@ function Hero() {
   );
 }
 
-export default Hero
+export default Hero;

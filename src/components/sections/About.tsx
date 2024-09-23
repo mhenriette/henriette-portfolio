@@ -3,10 +3,10 @@ import profile from "../../../public/profile.jpg"
 
 export default function About() {
   return (
-    <div className="w-full flex items-center justify-center md:h-screen my-auto">
+    <div className="w-full flex items-center justify-center md:my-12 my-auto">
       <div className="md:max-w-6xl w-full flex items-center justify-center gap-12 px-3 flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4 md:gap-8">
-          <h1 className="font-semibold text-2xl md:text-4xl leading-10">
+          <h1 className="font-semibold text-2xl md:text-3xl leading-10">
             A few words about <span className="text-secondary">me</span>
           </h1>
           <div className="w-full h-[400px] md:w-[400px] md:h-[400px] rounded-md overflow-hidden relative shrink-0 block md:hidden">
