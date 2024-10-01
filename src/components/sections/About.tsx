@@ -3,7 +3,7 @@ import profile from "../../../public/profile.jpg"
 
 export default function About() {
   return (
-    <div className="w-full flex items-center justify-center py-8 md:py-12">
+    <div className="w-full flex items-center justify-center py-8 md:py-12" id="about">
       <div className="md:max-w-6xl w-full flex items-center justify-center gap-12 px-3 flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4 md:gap-8">
           <h1 className="font-semibold text-2xl md:text-3xl leading-10">

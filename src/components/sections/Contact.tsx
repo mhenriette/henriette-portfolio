@@ -22,13 +22,13 @@ const socials = [
 
 export default function Contact() {
   return (
-    <div className="max-w-6xl py-8 md:py-12 mx-auto w-full items-start flex flex-col md:flex-row justify-center gap-32 px-3">
+    <div id="contact" className="max-w-6xl py-8 md:py-12 mx-auto w-full items-start flex flex-col md:flex-row justify-center gap-32 px-3">
       <div className="md:flex-1">
         <h1 className="font-semibold text-2xl md:text-3xl leading-10 mb-5">
           Let&apos;s get in <span className="text-secondary"> touch</span>
         </h1>
         <p className="my-5 text-lg">
-          Feel free to react out to me on social media or drop a message on my
+          Feel free to reach out to me on social media or drop a message on my
           portfolio.
         </p>
         <div className="flex items-center w-full  justify-center gap-10">
@@ -44,8 +44,8 @@ export default function Contact() {
             <Input type="text" label="Last name" id="ffloating_last_name" />
           </div>
           <Input id="floating_email" type="email" label=" Email address" />
-          <Input textArea id="message" label="Leave a message" />
-          <AnimatedButton>Submit</AnimatedButton>
+          <Input textArea id="message" />
+          <AnimatedButton onClick={()=>{}}>Submit</AnimatedButton>
         </form>
       </div>
     </div>

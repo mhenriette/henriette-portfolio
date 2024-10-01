@@ -4,10 +4,12 @@ import mune from "../../../public/munezero.jpeg";
 import Line from "../ui/Line";
 import AnimatedButton from "../cards/AnimatedButton";
 import {ArrowDownToLine, Send} from "lucide-react"
+import { useRouter } from "next/router";
 
 function Hero() {
+  const router = useRouter()
   return (
-    <div className="w-full flex flex-col items-center justify-center py-16 relative">
+    <div className="w-full flex flex-col items-center justify-center py-16 relative" id="home">
       <div className="flex flex-col items-center gap-5 md:max-w-6xl pt-20 px-3">
         <div className="w-40 h-40 rounded-full bg-secondary flex items-center justify-center md:mb-5">
           <div className="w-36 h-36 rounded-full border overflow-hidden">
@@ -24,11 +26,8 @@ function Hero() {
           </p>
         </div>
         <div className="flex flex-row items-center gap-5 md:mb-3 w-full md:w-auto justify-center">
-          <AnimatedButton><span> Say Hi</span> <Send width={16} height={16}/></AnimatedButton>
-          <AnimatedButton><span>Resume</span> <ArrowDownToLine width={16} height={16}/></AnimatedButton>
-          {/* <Button variant="destructive">
-            <Github/>
-          </Button> */}
+          <AnimatedButton onClick={()=>router.push("/#contact")}><span> Say Hi</span> <Send width={16} height={16}/></AnimatedButton>
+          <AnimatedButton onClick={()=>{}}><span>Resume</span> <ArrowDownToLine width={16} height={16}/></AnimatedButton>
         </div>
         <Line />
       </div>

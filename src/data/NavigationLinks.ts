@@ -2,21 +2,21 @@ export const navigationLinks = [
     {
         id:1,
         name:"Home",
-        link:"/"
+        link:"#home"
     },
      {
         id:2,
         name:"About",
-        link:"/"
+        link:"#about"
     },
      {
         id:3,
         name:"Projects",
-        link:"/"
+        link:"#projects"
     },
      {
         id:4,
         name:"Contact",
-        link:"/"
+        link:"#contact"
     }
 ]
