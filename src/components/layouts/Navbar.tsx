@@ -30,7 +30,7 @@ function Navbar() {
             <Link
               href={link.link}
               key={link.id}
-              className="borderXwidth relative uppercase pb-1"
+              className="borderXwidth relative uppercase pb-1 font-semibold"
             >
               {link.name}
             </Link>
