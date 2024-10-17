@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${spaceGrotesk.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

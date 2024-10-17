@@ -85,3 +85,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 0px);
 }
+
+/* Custom styles for the sheet */
+.sheet-overlay {
+  @apply bg-black bg-opacity-50 backdrop-blur-sm;
+}
+
+.sheet-content {
+  @apply bg-transparent;
+}

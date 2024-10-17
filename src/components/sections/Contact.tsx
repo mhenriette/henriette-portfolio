@@ -9,14 +9,17 @@ const socials = [
   {
     id: 1,
     children: <Upwork fill="#ffffff" />,
+    href: "https://www.upwork.com/freelancers/~017f56b580cc53e555?viewMode=1",
   },
   {
     id: 2,
     children: <Instagram fill="#ffffff" />,
+    href: "https://www.instagram.com/__munezero/",
   },
   {
     id: 3,
     children: <LinkedIn fill="#ffffff" />,
+    href: "https://www.linkedin.com/in/henriette-munezero-02043920b/",
   },
 ];
 
@@ -33,7 +36,7 @@ export default function Contact() {
         </p>
         <div className="flex items-center w-full  justify-center gap-10">
           {socials.map((social) => (
-            <Social key={social.id}>{social.children}</Social>
+            <Social key={social.id} href={social.href}>{social.children}</Social>
           ))}
         </div>
       </div>
