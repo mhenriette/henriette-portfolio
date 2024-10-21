@@ -4,7 +4,7 @@ import { skillCategories } from "@/data/skillCategories";
 
 export default function TechSkills() {
   return (
-    <section className="py-16 bg-primary">
+    <section className="py-16 bg-primary" id="skills">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-start mb-12 text-white">
           Technical Proficiencies

@@ -9,14 +9,21 @@ export const navigationLinks = [
         name:"About",
         link:"#about"
     },
-     {
+    {
         id:3,
+        name:"Skills",
+        link:"#skills"
+    },
+
+     {
+        id:4,
         name:"Projects",
         link:"#projects"
     },
      {
-        id:4,
+        id:5,
         name:"Contact",
         link:"#contact"
     }
+
 ]

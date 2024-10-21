@@ -20,13 +20,19 @@ function Hero() {
             <Image src={mune} alt="owner" />
           </div>
         </div>
-        <div className="text-xl md:text-4xl text-center w-full leading-loose tracking-wider md:mb-5">
+        <div className="text-xl md:text-4xl text-center w-full leading-loose tracking-wider md:mb-5 flex flex-col gap-5">
           <p>
             Hi, I&#39;m
             <span className="text-secondary"> Henriette Munezero</span>, a
             software engineer from Rwanda. I specialize in Web and Mobile
-            Development, and I&#39;m passionate about transforming ideas into
-            impactful products
+            Development.
+          </p>
+          <p>
+            I&lsquo;m currently working remotely as a Software Engineer at
+            <Link href="https://unita.apeunit.com/" className="text-secondary"> {" "}
+              Ape Unit, 
+            </Link>
+            {" "} a German digital agency based in Berlin.
           </p>
         </div>
         <div className="flex flex-row items-center gap-5 md:mb-3 w-full md:w-auto justify-center">

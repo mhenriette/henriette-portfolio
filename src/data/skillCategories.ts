@@ -1,4 +1,3 @@
-
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -12,9 +11,15 @@ import {
   SiPostgresql,
   SiPrisma,
   SiFigma,
+  SiOpenai,
+  SiEthereum,
+  SiWeb3Dotjs,
+  SiPython,
 } from "react-icons/si";
+import Metamask from "@/components/icons/Metamask";
 import { TbBrandReactNative } from "react-icons/tb";
 import { DiMysql } from "react-icons/di";
+import { GiMagicSwirl } from "react-icons/gi";
 
 export const skillCategories = [
   {
@@ -47,6 +52,7 @@ export const skillCategories = [
     skills: [
       { name: "TypeScript", icon: SiTypescript, proficiency: "Proficient" },
       { name: "JavaScript", icon: SiJavascript, proficiency: "Proficient" },
+      { name: "Python", icon: SiPython, proficiency: "Proficient" },
     ],
   },
   {
@@ -61,6 +67,19 @@ export const skillCategories = [
         icon: TbBrandReactNative,
         proficiency: "Learning",
       },
+    ],
+  },
+  {
+    name: "AI",
+    skills: [{ name: "OpenAI", icon: SiOpenai, proficiency: "Proficient" }],
+  },
+  {
+    name: "Blockchain & Web3",
+    skills: [
+      { name: "MetaMask", icon: Metamask, proficiency: "Proficient" },
+      { name: "Wagmi", icon: GiMagicSwirl, proficiency: "Proficient" },
+      { name: "Ethereum", icon: SiEthereum, proficiency: "Learning" },
+      { name: "Web3.js", icon: SiWeb3Dotjs, proficiency: "Learning" },
     ],
   },
 ];
