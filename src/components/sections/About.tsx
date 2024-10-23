@@ -12,7 +12,7 @@ export default function About() {
           <h1 className="font-semibold text-2xl md:text-3xl leading-10">
             A few words about <span className="text-secondary">me</span>
           </h1>
-          <div className="w-full h-[400px] md:w-[400px] md:h-[400px] rounded-md overflow-hidden relative shrink-0 block md:hidden">
+          <div className="aspect-[400/400] rounded-md overflow-hidden relative shrink-0 block md:hidden">
             <Image src={profile} fill alt="me" className="object-cover" />
           </div>
           <div className="flex flex-col gap-6">
@@ -30,17 +30,16 @@ export default function About() {
               learning and improvement.{" "}
             </p>
             <p>
-              I enjoy taking on coding challenges to keep my skills sharp
-              and stay up to date with the latest tech trends. I&apos;m
-              experienced in agile environments and love working with teams to
-              bring ideas to life.{" "}
-              When I&apos;m not coding, you can find me reading books, watching
-              movies, or spending time with my family.
+              I enjoy taking on coding challenges to keep my skills sharp and
+              stay up to date with the latest tech trends. I&apos;m experienced
+              in agile environments and love working with teams to bring ideas
+              to life. When I&apos;m not coding, you can find me reading books,
+              watching movies, or spending time with my family.
             </p>
           </div>
         </div>
-        <div className="w-full h-[400px] md:w-[400px] md:h-[400px] rounded-md overflow-hidden relative shrink-0 hidden md:block">
-          <Image src={profile} fill alt="me" className="object-cover" />
+        <div className="md:w-[25rem] md:h-[25rem] lg:w-[31.25rem] lg:h-[31.25rem] rounded-md overflow-hidden relative shrink-0 hidden md:block">
+          <Image src={profile} fill alt="me" className="object-cover"  />
         </div>
       </div>
     </div>

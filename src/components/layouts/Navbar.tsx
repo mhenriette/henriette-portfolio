@@ -85,7 +85,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-full h-full p-0 bg-black/90 backdrop-blur-md border-none"
+              className="w-full h-full p-0 bg-black/90 backdrop-blur-md border-none md:hidden"
             >
               <nav className="flex flex-col items-center justify-center h-full gap-8">
                 {navigationLinks.map((link) => (
