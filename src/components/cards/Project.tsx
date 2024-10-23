@@ -38,7 +38,7 @@ export default function Project({
             <Image src={images[0]} alt="project" fill />
           </div>
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold">{title}</h3>
+            <h3 className="font-bold text-2xl">{title}</h3>
             <p className="text-slate-400 line-clamp-4">{description}</p>
             <Button variant="gradient" size="xs">
               <div className="relative z-10 flex items-center justify-center w-full py-2">

@@ -62,8 +62,8 @@ export function ProjectDescription({
         )}
       </CardHeader>
       <CardContent className="pt-4">
-        <CardDescription className="mb-4 text-slate-400 text-lg">
-          {description}
+        <CardDescription className="mb-4 text-slate-400 text-lg flex flex-col gap-2">
+          {description.split("\n").map((paragraph, index)=><p key={index}>{paragraph}</p>)}
         </CardDescription>
         <Separator className="my-4 bg-[#ffffff33] opacity-50" />
         <div className="flex flex-wrap gap-2 mb-4">
@@ -71,23 +71,24 @@ export function ProjectDescription({
             <Badge
               key={lang}
               variant="secondary"
-              className="bg-[#131924] text-white hover:bg-primary/80 text-sm px-4 py-2"
+              className="bg-[#131924] text-white hover:bg-primary/80 text-sm px-4 py-2 capitalize"
             >
               {lang}
             </Badge>
           ))}
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col gap-4">
           {images?.slice(1).map((src, index) => (
             <div
               key={index}
-              className="relative aspect-[303/170] overflow-hidden rounded-md"
+              className="relative aspect-[800/400] overflow-hidden rounded-md"
             >
               <Image
                 src={src}
                 alt={`Project image ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
+                objectPosition="center"
                 className="transition-transform hover:scale-105"
               />
             </div>
