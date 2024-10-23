@@ -1,31 +1,65 @@
 import Image, { StaticImageData } from "next/image";
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import { ProjectDescription } from "../sections/ProjectDescription";
+import dynamic from "next/dynamic";
+const Info = dynamic(() => import("lucide-react").then((mod) => mod.Info), {
+  ssr: false,
+});
+const ChevronRight = dynamic(
+  () => import("lucide-react").then((mod) => mod.ChevronRight),
+  {
+    ssr: false,
+  }
+);
+const Button = dynamic(() => import("../ui/button").then((mod) => mod.Button), {
+  ssr: false,
+});
+
 export default function Project({
-  imageUrl,
+  images,
   title,
   description,
+  githubLink,
+  languages,
+  liveLink,
 }: {
   title: string;
-  imageUrl: StaticImageData;
+  images: StaticImageData[];
   description: string;
+  githubLink?: string;
+  languages: string[];
+  liveLink?: string;
 }) {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="w-full md:w-[21rem] h-96 rounded-2xl border border-[#ffffff33] hover:border-secondary p-4 bg-[#050817]">
+        <div className="w-full md:w-[21rem] rounded-2xl border border-[#ffffff33] hover:border-secondary p-4 bg-[#050817]">
           <div className="rounded-md overflow-hidden relative w-full h-44 mb-5">
-            <Image src={imageUrl} alt="project" fill />
+            <Image src={images[0]} alt="project" fill />
           </div>
-          <div className="">
-            <h3 className="font-bold pb-2">{title}</h3>
+          <div className="flex flex-col gap-4">
+            <h3 className="font-bold">{title}</h3>
             <p className="text-slate-400 line-clamp-4">{description}</p>
+            <Button variant="gradient" size="xs">
+              <div className="relative z-10 flex items-center justify-center w-full py-2">
+                <Info className="mr-2 h-4 w-4" />
+                Learn More
+                <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </div>
+            </Button>
           </div>
         </div>
       </DialogTrigger>
       <DialogContent>
-        <ProjectDescription />
-      </DialogContent>        
+        <ProjectDescription
+          title={title}
+          description={description}
+          languages={languages}
+          githubLink={githubLink}
+          liveLink={liveLink}
+          images={images}
+        />
+      </DialogContent>
     </Dialog>
   );
 }

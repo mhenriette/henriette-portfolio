@@ -69,7 +69,6 @@ export default function Contact() {
         description: "Failed to send message",
         variant: "destructive",
       });
-      console.log(error);
     } finally {
       setLoading(false);
     }

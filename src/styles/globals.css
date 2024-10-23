@@ -102,3 +102,14 @@ input:-webkit-autofill,
     -webkit-box-shadow: 0 0 0 30px #080A17 inset !important;
     -webkit-text-fill-color: white !important;
   }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projectScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.projectScroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

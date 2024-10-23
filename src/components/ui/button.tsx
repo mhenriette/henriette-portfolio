@@ -18,9 +18,12 @@ const buttonVariants = cva(
           "relative inline-flex w-full md:w-60 overflow-hidden focus:outline-none mx-auto mt-12",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        gradient:
+          "w-full group relative overflow-hidden text-white bg-primary border border-[#ffffff33] transition-all duration-300",
       },
       size: {
         default: "px-7 py-3",
+        xs: "px-4 py-1",
         sm: "h-8 rounded-md px-3 text-xs",
         md: "p-px h-12 rounded-lg",
         lg: "h-10 rounded-md px-8",

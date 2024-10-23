@@ -9,17 +9,18 @@ export const navigationLinks = [
         name:"About",
         link:"#about"
     },
-    {
+      {
         id:3,
+        name:"Projects",
+        link:"#projects"
+    },
+    {
+        id:4,
         name:"Skills",
         link:"#skills"
     },
 
-     {
-        id:4,
-        name:"Projects",
-        link:"#projects"
-    },
+   
      {
         id:5,
         name:"Contact",

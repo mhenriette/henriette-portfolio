@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { SkillCategory } from "@/types/stacks";
 export default function SkillsCard({stack, index}:{stack:SkillCategory, index:number}) {
     const {name, skills} = stack
-    console.log(name, skills)
   return (
         <motion.div
               key={name}

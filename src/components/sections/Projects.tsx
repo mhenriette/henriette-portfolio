@@ -9,7 +9,6 @@ export default function Projects() {
   const handleShow = (value: boolean)=>{
     setShow(value)
   }
-  console.log(show)
   return (
     <div className="w-full max-w-6xl mx-auto px-3 py-8 md:py-12 flex flex-col" id="projects">
       <h2 className="font-bold text-2xl md:text-3xl text-start">
@@ -22,7 +21,10 @@ export default function Projects() {
             key={project.id}
             title={project.title}
             description={project.description}
-            imageUrl={project.imageUrl}
+            images={project.imageUrls}
+            githubLink={project.githubLink}
+            languages={project.languages}
+            liveLink={project.liveLink}
           />
         ))}
       </div>
@@ -32,7 +34,10 @@ export default function Projects() {
             key={project.id}
             title={project.title}
             description={project.description}
-            imageUrl={project.imageUrl}
+            images={project.imageUrls}
+            githubLink={project.githubLink}
+            languages={project.languages}
+            liveLink={project.liveLink}
           />
         ))}
       </div>

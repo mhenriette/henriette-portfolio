@@ -37,7 +37,7 @@ function Hero() {
         </div>
         <div className="flex flex-row items-center gap-5 md:mb-3 w-full md:w-auto justify-center">
           <AnimatedButton onClick={() => router.push("/#contact")}>
-            <span> Say Hi</span> <Send width={16} height={16} />
+            <span> Get in touch</span> <Send width={16} height={16} />
           </AnimatedButton>
           <AnimatedButton onClick={() => {}} className="relative">
             <Link
