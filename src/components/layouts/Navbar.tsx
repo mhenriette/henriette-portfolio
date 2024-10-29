@@ -57,7 +57,7 @@ export default function Navbar() {
               <Link
                 href={link.link}
                 key={link.id}
-                className={`text-sm uppercase font-semibold tracking-wider transition-colors duration-300 ${
+                className={`text-sm uppercase font-semibold tracking-wider transition-colors duration-300 hover:text-secondary ${
                   activeLink === link.link
                     ? "text-white border-b-2 border-secondary"
                     : "text-white"
