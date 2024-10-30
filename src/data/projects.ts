@@ -49,7 +49,7 @@ export const projects = [
     id: 3,
     title: "ICP",
     description:
-      "The website is an AI chatbot platform built on the Internet Computer Protocol (ICP). As a frontend developer, I contributed to creating a nuser-friendly interface that integrates AI with blockchain technology. \n\n The platform offers conversation starters, learning paths about ICP, multilingual support, and a theme toggle. It focuses on helping users learn about and interact with AI on the Internet Computer, providing educational resources and practical applications. This project showcases the potential of combining AI and blockchain technologies in a user-accessible format.",
+      "The website is an AI chatbot platform built on the Internet Computer Protocol (ICP). As a frontend developer, I contributed to creating a user-friendly interface that integrates AI with blockchain technology. \n\n The platform offers conversation starters, learning paths about ICP, multilingual support, and a theme toggle. It focuses on helping users learn about and interact with AI on the Internet Computer, providing educational resources and practical applications. This project showcases the potential of combining AI and blockchain technologies in a user-accessible format.",
     imageUrls: [icp1, icp2, icp3],
     languages: ["figma", "nextjs", "react", "typescript", "pandacss", "nodejs"],
     liveLink: "https://icp-ai-chat-frontend.vercel.app/",
