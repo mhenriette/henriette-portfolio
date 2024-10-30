@@ -49,7 +49,7 @@ export const projects = [
     id: 3,
     title: "ICP",
     description:
-      "The website is an AI chatbot platform built on the Internet Computer Protocol (ICP). As a frontend developer, I contributed to creating a user-friendly interface that integrates AI with blockchain technology. The platform offers conversation starters, learning paths about ICP, multilingual support, and a theme toggle. It focuses on helping users learn about and interact with AI on the Internet Computer, providing educational resources and practical applications. This project showcases the potential of combining AI and blockchain technologies in a user-accessible format.",
+      "The website is an AI chatbot platform built on the Internet Computer Protocol (ICP). As a frontend developer, I contributed to creating a nuser-friendly interface that integrates AI with blockchain technology. \n\n The platform offers conversation starters, learning paths about ICP, multilingual support, and a theme toggle. It focuses on helping users learn about and interact with AI on the Internet Computer, providing educational resources and practical applications. This project showcases the potential of combining AI and blockchain technologies in a user-accessible format.",
     imageUrls: [icp1, icp2, icp3],
     languages: ["figma", "nextjs", "react", "typescript", "pandacss", "nodejs"],
     liveLink: "https://icp-ai-chat-frontend.vercel.app/",
@@ -58,7 +58,7 @@ export const projects = [
     id: 4,
     title: "Unit A website",
     description:
-      "Unit A is a European-African alliance specializing in frontend development, blockchain technology, and GPT AI integration. As a frontend developer on this project, I contributed to creating a responsive, modern website that showcases the company's expertise in Web3 technologies and their commitment to social impact. Unit A works with major blockchain protocols and offers educational initiatives in Africa. The platform highlights their innovative projects and partnerships, demonstrating their capability to deliver cutting-edge solutions while fostering sustainable impact in the tech industry.",
+      "Unit A is a European-African alliance specializing in frontend development, blockchain technology, and GPT AI integration. As a frontend developer on this project, I contributed to creating a responsive, modern website that showcases the company's expertise in Web3 technologies and their commitment to social impact. \n\n Unit A works with major blockchain protocols and offers educational initiatives in Africa. The platform highlights their innovative projects and partnerships, demonstrating their capability to deliver cutting-edge solutions while fostering sustainable impact in the tech industry.",
     imageUrls: [unit1, unit2, unit3],
     languages: ["figma", "nextjs", "react", "typescript", "tailwinds"],
     liveLink: "https://unita.apeunit.com/",
