@@ -13,7 +13,7 @@ export default function SkillsCard({stack, index}:{stack:SkillCategory, index:nu
               <h3 className="text-xl font-semibold mb-4 text-white">
                 {name}
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-wrap gap-4">
                 {skills.map((skill) => (
                   <motion.div
                     key={skill.name}

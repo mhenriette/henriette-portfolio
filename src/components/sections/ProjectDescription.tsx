@@ -47,7 +47,7 @@ export function ProjectDescription({
   }, [calculateHeight])
   return (
     <Card
-      className="w-full bg-[#050817] text-white border-none md:rounded-2xl max-h-[40rem] overflow-y-scroll projectScroll"
+      className="w-full bg-[#050817] text-white border-none md:rounded-2xl max-h-[40rem] overflow-y-scroll projectScroll rounded-2xl"
       ref={cardRef}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -63,7 +63,9 @@ export function ProjectDescription({
       </CardHeader>
       <CardContent className="pt-4">
         <CardDescription className="mb-4 text-slate-400 text-lg flex flex-col gap-2">
-          {description.split("\n").map((paragraph, index)=><p key={index}>{paragraph}</p>)}
+          {description.split("\n").map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </CardDescription>
         <Separator className="my-4 bg-[#ffffff33] opacity-50" />
         <div className="flex flex-wrap gap-2 mb-4">

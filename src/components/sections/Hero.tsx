@@ -29,17 +29,21 @@ function Hero() {
           </p>
           <p>
             I&lsquo;m currently working remotely as a Software Engineer at
-            <Link href="https://unita.apeunit.com/" className="text-secondary"> {" "}
-              Ape Unit, 
-            </Link>
-            {" "} a German digital agency based in Berlin.
+            <Link href="https://unita.apeunit.com/" className="text-secondary">
+              {" "}
+              Ape Unit,
+            </Link>{" "}
+            a German digital agency based in Berlin.
           </p>
         </div>
-        <div className="flex flex-row items-center gap-5 md:mb-3 w-full md:w-auto justify-center">
-          <AnimatedButton onClick={() => router.push("/#contact")}>
+        <div className="flex mt-6 md:mt-12  flex-col sm:flex-row items-center gap-5 md:mb-3 w-full md:w-auto justify-center">
+          <AnimatedButton
+            onClick={() => router.push("/#contact")}
+            className="!mt-0"
+          >
             <span> Get in touch</span> <Send width={16} height={16} />
           </AnimatedButton>
-          <AnimatedButton onClick={() => {}} className="relative">
+          <AnimatedButton onClick={() => {}} className="relative !mt-0">
             <Link
               href="/Henriette_CV.pdf"
               target="_blank"

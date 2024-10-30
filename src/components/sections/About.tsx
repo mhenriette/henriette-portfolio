@@ -18,7 +18,7 @@ export default function About() {
           <div className="flex flex-col gap-6">
             <p>
               I&#39;m passionate about transforming ideas into impactful
-              products, offering 2+ years of experience in the field. I am very
+              products, having 2+ years of experience in the field. I am very
               enthusiastic about web3 and frontend technologies.
             </p>
             <p>

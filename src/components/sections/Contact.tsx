@@ -8,6 +8,7 @@ import { ChangeEvent, FormEvent, useCallback, useState } from "react";
 import LoadingSpinner from "../ui/LoadingSpinner";
 import { toast} from "@/hooks/use-toast";
 import { Toaster } from "../ui/toaster";
+import Github from "../icons/Github";
 
 const socials = [
   {
@@ -25,6 +26,11 @@ const socials = [
     children: <LinkedIn fill="#ffffff" />,
     href: "https://www.linkedin.com/in/henriette-munezero-02043920b/",
   },
+  {
+    id:4,
+    children: <Github />,
+    href: "https://github.com/mhenriette"
+  }
 ];
 
 export default function Contact() {
@@ -87,7 +93,7 @@ export default function Contact() {
           Feel free to reach out to me on social media or drop a message on my
           portfolio.
         </p>
-        <div className="flex items-center w-full  justify-center gap-10">
+        <div className="flex items-center w-full justify-start flex-wrap gap-5 md:gap-10">
           {socials.map((social) => (
             <Social key={social.id} href={social.href}>
               {social.children}
