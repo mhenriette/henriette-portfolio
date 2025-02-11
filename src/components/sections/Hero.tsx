@@ -45,7 +45,7 @@ function Hero() {
           </AnimatedButton>
           <AnimatedButton onClick={() => {}} className="relative !mt-0">
             <Link
-              href="/Henriette_CV.pdf"
+              href="/Henriette-Munezero.pdf"
               target="_blank"
               className="absolute top-0 left-0 right-0 bottom-0 w-full h-full"
             />

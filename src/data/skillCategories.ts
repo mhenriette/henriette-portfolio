@@ -15,6 +15,8 @@ import {
   SiEthereum,
   SiWeb3Dotjs,
   SiPython,
+  SiSwift, 
+  SiCypress,
 } from "react-icons/si";
 import Metamask from "@/components/icons/Metamask";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -53,11 +55,12 @@ export const skillCategories = [
       { name: "TypeScript", icon: SiTypescript, proficiency: "Proficient" },
       { name: "JavaScript", icon: SiJavascript, proficiency: "Proficient" },
       { name: "Python", icon: SiPython, proficiency: "Proficient" },
+      { name: "Swift", icon:SiSwift, proficiency: "Learning"}
     ],
   },
   {
     name: "Testing",
-    skills: [{ name: "Jest", icon: SiJest, proficiency: "Proficient" }],
+    skills: [{ name: "Jest", icon: SiJest, proficiency: "Proficient" }, { name: "Cypress", icon: SiCypress, proficiency: "Proficient" }],
   },
   {
     name: "Mobile",
@@ -65,6 +68,11 @@ export const skillCategories = [
       {
         name: "React Native",
         icon: TbBrandReactNative,
+        proficiency: "Proficient",
+      },
+       {
+        name: "SwiftUI",
+        icon: SiSwift,
         proficiency: "Learning",
       },
     ],
